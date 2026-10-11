@@ -8,6 +8,15 @@
 | Fach | ITSE (Übungen) |
 | Link | https://www.franzmatejka.at/htl/doc/ITSI/lab/ransom_ryuk/01_ryuk.html |
 
+## Übung 1.1 (Ryuk Funktionsweise)
+
+Files:
+<img width="800" height="748" alt="image" src="https://github.com/user-attachments/assets/2c2bc3b5-3c26-42ad-9170-36f940007da2" />
+
+Lösegeld wurde gezahlt:
+<img width="1325" height="982" alt="image" src="https://github.com/user-attachments/assets/60523782-84d3-4d1c-b6ea-42b0b8046de9" />
+
+
 ## Übung 1.2 (Ryuk - Red Team)
 
 Erstellen des bash-scripts mit openssl für encryption ohne rsa encryption:
