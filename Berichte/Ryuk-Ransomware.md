@@ -53,7 +53,8 @@ Erstellen des bash-scripts mit openssl für encryption ohne rsa encryption:
 
 
 ### Version 2
-Erstellen des RSA Keys (via ``OpenSSL`` für das verschlüsseln des aes-victim-key:
+Beispielhaftes erstellen des RSA Keys (via ``OpenSSL``) für das verschlüsseln des aes-victim-key:
+(Master Key)
 ```bash
 # Private Key
 openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
