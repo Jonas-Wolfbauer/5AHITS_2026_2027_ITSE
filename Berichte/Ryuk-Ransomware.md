@@ -15,7 +15,7 @@ Files:
 <img width="800" height="748" alt="image" src="https://github.com/user-attachments/assets/2c2bc3b5-3c26-42ad-9170-36f940007da2" />
 
 Lösegeld wurde gezahlt:
-<img width="1325" height="982" alt="image" src="https://github.com/user-attachments/assets/60523782-84d3-4d1c-b6ea-42b0b8046de9" />
+<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/60523782-84d3-4d1c-b6ea-42b0b8046de9" />
 
 
 ## Übung 1.2 (Ryuk - Red Team)
