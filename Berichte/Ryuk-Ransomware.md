@@ -11,6 +11,7 @@
 ## Übung 1.1 (Ryuk Funktionsweise)
 
 Files:
+
 <img width="800" height="748" alt="image" src="https://github.com/user-attachments/assets/2c2bc3b5-3c26-42ad-9170-36f940007da2" />
 
 Lösegeld wurde gezahlt:
