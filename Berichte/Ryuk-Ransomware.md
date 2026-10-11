@@ -21,7 +21,7 @@ Lösegeld wurde gezahlt:
 
 ## Übung 1.2 (Ryuk - Red Team)
 
-### Version 1:
+### Version 1
 Erstellen des bash-scripts mit openssl für encryption ohne rsa encryption:
 
 ```bash
@@ -52,7 +52,7 @@ Erstellen des bash-scripts mit openssl für encryption ohne rsa encryption:
 ```
 
 
-### Version 2:
+### Version 2
 Erstellen des RSA Key für das verschlüsseln des aes-victim-key:
 ```
 ssh-keygen -t rsa -b 4096 
@@ -182,9 +182,9 @@ shred -u -- "$0"
 
 ## Übung 1.3 (Ryuk - Blue Team)
 
-Erstellen von dem paid-script:
+Erstellen von dem Blue Team Script:
 
-### Version 1:
+### Version 1
 Für die Version 1 des attackers-scripts:
  ```bash
 #!/bin/bash
@@ -206,7 +206,7 @@ do
 done
 ```
 
-Unfertiges Blue Team Script:
+### Version 2
 ```bash
 #!/bin/bash
 
