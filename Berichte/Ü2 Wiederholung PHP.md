@@ -8,6 +8,24 @@
 | Fach | ITSE (Übungen) |
 | Link | [https://www.franzmatejka.at/htl/doc/ITSI/lab/ransom_ryuk/01_ryuk.html](https://www.franzmatejka.at/htl/doc/ITSI_5/itsi5-lab/02_php.html) |
 
+# KI Verwendung
+Im Laufe dieses Berichts wurde KI vereinzelt verwendet.  
+Verwendetete Tools:
+
+- Google Suche (AI Overview)
+
+Es wurde **kein** Code mit generativer KI verwendet.
+
+## Beispielhafter Anwedungsfall
+Google Suche:
+```
+> input decimal values html 
+
+Um Dezimalzahlen (Kommazahlen) in einem HTML-Eingabefeld zu erlauben, müssen Sie das step-Attribut des <input type="number">-Elements verwenden.
+Standardmäßig akzeptiert das HTML5-Zahlenfeld nur ganze Zahlen (step="1").
+...
+```
+
 # Übungen
 
 ## Übung  2.1 (PHP)
@@ -35,6 +53,7 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 | ``print``           | Gibt Output in Dokument aus - ähnlich zu ``echo``, nimmt jedoch nur einen Parameter und returned 1. ||
 | ``$variableName``       | Variablen werden immer mit ``$`` deklariert. Variablentypen müssen **nicht** spezifiziert werden. |
 | ``if`` / ``else`` / ``elseif`` | Werden bei bool'schen Bedingungen aufgerufen. |
+| Schleife | Es gibt ``for``, ``while`` oder auch ``foreach`` Schleifen. |
 | ``var_dump()`` | Nimmt beliebige Objekte als Übergabeparameter und liefert dessen Typ zurück. |
 | ``function()`` | Funktionen werden mit dem ``function`` Keyword deklariert. |
 | ``(<Datatype>)`` | Typecasts sind möglich und werden vor dem Wert bzw. der Variable geschrieben. |
