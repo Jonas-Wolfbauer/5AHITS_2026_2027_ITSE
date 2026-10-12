@@ -6,7 +6,7 @@
 | Verfasser | Xu Matthias Chen, Jonas Franz Wolfbauer |
 | Datum | 12.10.2026 |
 | Fach | ITSE (Übungen) |
-| Link | [https://www.franzmatejka.at/htl/doc/ITSI/lab/ransom_ryuk/01_ryuk.html](https://www.franzmatejka.at/htl/doc/ITSI_5/itsi5-lab/02_php.html) |
+| Link | [[https://www.franzmatejka.at/htl/doc/ITSI/lab/ransom_ryuk/01_ryuk.html](https://www.franzmatejka.at/htl/doc/ITSI_5/itsi5-lab/02_php.html)]
 
 >**AUFGABENSTELLUNG**
 >HINZUFÜGEN!!!
