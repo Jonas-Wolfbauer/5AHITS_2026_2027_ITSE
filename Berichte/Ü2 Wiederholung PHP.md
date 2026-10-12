@@ -8,9 +8,6 @@
 | Fach | ITSE (Übungen) |
 | Link | [Aufgabenstellung](https://www.franzmatejka.at/htl/doc/ITSI_5/itsi5-lab/02_php.html)
 
->**AUFGABENSTELLUNG**
->HINZUFÜGEN!!!
-
 # KI Verwendung
 Im Laufe dieses Berichts wurde KI vereinzelt verwendet.  
 Verwendetete Tools:
