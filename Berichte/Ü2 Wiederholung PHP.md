@@ -14,7 +14,7 @@ Verwendetete Tools:
 
 - Google Suche (AI Overview)
 - Claude Fehlersuche vom PHP Code
-- Es wurde **kein** Code mit generativer KI verwendet.
+- Es wurde **kein** Code von generativer KI verwendet.
 
 ## Beispielhafter Anwedungsfall
 Google Suche:
@@ -34,6 +34,11 @@ Claude:
 # Übungen
 
 ## Übung  2.1 (PHP)
+
+>**Aufgabenstellung**
+>Wiederhole PHP Grundlagen, z.B. w3schools
+>Arbeitsbericht: Cheat Sheet der wichtigsten PHP Befehle und Konstrukte.
+
 PHP ist in der Lage Quelltext zur Laufzeit zu generieren.
 
 
@@ -70,12 +75,16 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 
 ## Übung 2.2 (PHP Aufgaben)
 
+>**Aufgabenstellung**
+>Implementiere folgenden Aufgaben:
+
 ### Notenverwaltung
 
-**Quellen**
-- [Pixelpilot PHP Formulare](https://pixelpilot.github.io/webdev/php_mysql/20_formulare.html)
-- [HTML Tables](https://www.w3schools.com/html/html_tables.asp)
-- [CSS](https://www.w3schools.com/cssref/pr_border-collapse.php)
+>**Aufgabenstellung**
+>- Mehrere Noten über ein Formular eingeben
+>- Noten in einem Array speichern
+>- Durchschnitt, beste/schlechteste Note und Anzahl der positiven Noten berechnen
+>- Ausgabe als HTML-Tabelle
 
 ```PHP
 <?php
@@ -194,10 +203,17 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 </style>
 ```
 
+**Quellen**
+- [Pixelpilot PHP Formulare](https://pixelpilot.github.io/webdev/php_mysql/20_formulare.html)
+- [HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+- [CSS](https://www.w3schools.com/cssref/pr_border-collapse.php)
+
 ### Passwort-Generator
 
-**Quellen**
-- [Generating a random password in php](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)
+>**Aufgabenstellung**
+>- Länge über ein Formular festlegen
+>- Zufälliges Passwort erzeugen
+>- Optionen: Groß-/Kleinbuchstaben, Zahlen, Sonderzeichen
 
 #### Version 1
 ```PHP
@@ -311,8 +327,13 @@ if (isset($_GET["laenge"]))
 
 ?>
 ```
-
+**Quellen**
+- [Generating a random password in php](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)
 
 ### Zahlenratespiel
 
-**Quellen**
+>**Aufgabenstellung**
+>- Server erzeugt eine Zufallszahl
+>- Benutzer gibt einen Tipp ab
+>- PHP antwortet mit „zu hoch“, „zu niedrig“ oder „richtig“
+> -Anzahl der Versuche mitzählen
