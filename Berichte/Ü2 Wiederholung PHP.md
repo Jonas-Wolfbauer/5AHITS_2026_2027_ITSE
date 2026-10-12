@@ -14,8 +14,7 @@ Verwendetete Tools:
 
 - Google Suche (AI Overview)
 - Claude Fehlersuche vom PHP Code
-- 
-Es wurde **kein** Code mit generativer KI verwendet.
+- Es wurde **kein** Code mit generativer KI verwendet.
 
 ## Beispielhafter Anwedungsfall
 Google Suche:
