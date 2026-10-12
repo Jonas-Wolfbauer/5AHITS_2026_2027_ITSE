@@ -66,7 +66,7 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 | Mathematische Funktionen | ``pi()`` (liefert Pi), ``min()``/``max()`` (liefert größten/kleinsten Wert), ... |
 
 **Quellen**
-- (w3schools PHP)[https://www.w3schools.com/php/]
+-[w3schools PHP](https://www.w3schools.com/php/)
 
 ## Übung 2.2 (PHP Aufgaben)
 
