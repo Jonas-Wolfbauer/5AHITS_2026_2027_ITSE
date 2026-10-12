@@ -129,9 +129,73 @@ if (isset($_GET["laenge"]))
 {
     echo "$passwort";
 }
+?>
+```
+#### Version 2
+```
+<h1>Passwortgenerator</h1>
+
+<?php
+
+// Source - https://stackoverflow.com/q/6101956
+// Posted by nunos, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-10-12, License - CC BY-SA 3.0
+
+function randomPassword($laenge) 
+{
+    $alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    // schaut ob die Checkbox angehackt ist unf fügt die Option hinzu
+    if (isset($_GET["Großbuchstaben"]) && $_GET["Großbuchstaben"] == 1)
+    {
+        $alphabet .= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    }
+    if (isset($_GET["zahl"]) && $_GET["zahl"] == 1)
+    {
+        $alphabet .= "0123456789";
+    }
+    if (isset($_GET["sonderzeichen"]) && $_GET["sonderzeichen"] == 1)
+    {
+        $alphabet .= "!@#$%^&*()_-=+;:,.?";
+    }
+    
+    for ($i = 0; $i < $laenge; $i++) 
+    {
+        $n = rand(0, strlen($alphabet)-1);
+        $pass[$i] = $alphabet[$n];
+    }
+    // implode() joins array elements with a string -> macht aus einem Array einen String
+    return implode("", $pass); 
+}
+
+$anzahl = 0;
+$passwort = "";
+if (isset($_GET["laenge"]))
+{
+    $anzahl = $_GET["laenge"];
+    $passwort = randomPassword($anzahl);
+}
+?>
+
+
+
+<form action="<?php echo $_SERVER["PHP_SELF"]?>" method="get">
+    <input type="number" name="laenge" placeholder="Länge" value ="<?php echo $laenge?>"> <br>
+    <input type="checkbox" name="Großbuchstaben" value="1"> Großbuchstaben <input type="checkbox" name="zahl" value="1"> Zahlen <input type="checkbox" name="sonderzeichen" value="1"> Sonderzeichen<br>
+    <input type="submit"value="Sei freundlich zu mir!">
+</form>
+
+<?php
+
+echo "<h2>Dein Passwort: </h2>";
+if (isset($_GET["laenge"]))
+{
+    echo "$passwort";
+}
 
 ?>
 ```
+
 
 ### Zahlenratespiel
 
