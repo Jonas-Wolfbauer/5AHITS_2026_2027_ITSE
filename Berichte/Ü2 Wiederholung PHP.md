@@ -27,8 +27,8 @@ Standardmäßig akzeptiert das HTML5-Zahlenfeld nur ganze Zahlen (step="1").
 ```
 Claude:
 ```
-> input das ganze index.php
-Suche mir die Fehler in diesem PHP Programm und sag mir was ich verbessern sollte.
+> Suche mir die Fehler in diesem PHP Programm und sag mir was ich verbessern sollte. (index.php hochgeladen)
+...
 ``` 
 
 # Übungen
