@@ -8,6 +8,9 @@
 | Fach | ITSE (Übungen) |
 | Link | [https://www.franzmatejka.at/htl/doc/ITSI/lab/ransom_ryuk/01_ryuk.html](https://www.franzmatejka.at/htl/doc/ITSI_5/itsi5-lab/02_php.html) |
 
+>**AUFGABENSTELLUNG**
+>HINZUFÜGEN!!!
+
 # KI Verwendung
 Im Laufe dieses Berichts wurde KI vereinzelt verwendet.  
 Verwendetete Tools:
