@@ -16,7 +16,8 @@ Im Laufe dieses Berichts wurde KI vereinzelt verwendet.
 Verwendetete Tools:
 
 - Google Suche (AI Overview)
-
+- Claude Fehlersuche vom PHP Code
+- 
 Es wurde **kein** Code mit generativer KI verwendet.
 
 ## Beispielhafter Anwedungsfall
@@ -28,6 +29,11 @@ Um Dezimalzahlen (Kommazahlen) in einem HTML-Eingabefeld zu erlauben, müssen Si
 Standardmäßig akzeptiert das HTML5-Zahlenfeld nur ganze Zahlen (step="1").
 ...
 ```
+Claude:
+```
+> input das ganze index.php
+Suche mir die Fehler in diesem PHP Programm und sag mir was ich verbessern sollte.
+``` 
 
 # Übungen
 
@@ -75,7 +81,55 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 
 ### Passwort-Generator
 
-**Quellen**
+**[Quellen](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)**
+
+```
+<h1>Passwortgenerator</h1>
+
+<?php
+
+// Source - https://stackoverflow.com/q/6101956
+// Posted by nunos, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-10-12, License - CC BY-SA 3.0
+
+function randomPassword($laenge) 
+{
+    $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?";
+    for ($i = 0; $i < $laenge; $i++) 
+    {
+        $n = rand(0, strlen($alphabet)-1);
+        $pass[$i] = $alphabet[$n];
+    }
+    // implode() joins array elements with a string -> macht aus einem Array einen String
+    return implode("", $pass); 
+}
+
+$anzahl = 0;
+$passwort = "";
+if (isset($_GET["laenge"]))
+{
+    $anzahl = $_GET["laenge"];
+    $passwort = randomPassword($anzahl);
+}
+?>
+
+
+
+<form action="<?php echo $_SERVER["PHP_SELF"]?>" method="get">
+    <input type="number" name="laenge" placeholder="Länge" value ="<?php echo $laenge?>">
+    <input type="submit"value="Sei freundlich zu mir!">
+</form>
+
+<?php
+
+echo "<h2>Dein Passwort: </h2>";
+if (isset($_GET["laenge"]))
+{
+    echo "$passwort";
+}
+
+?>
+```
 
 ### Zahlenratespiel
 
