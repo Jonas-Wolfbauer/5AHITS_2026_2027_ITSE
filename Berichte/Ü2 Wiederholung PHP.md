@@ -36,7 +36,7 @@ Claude:
 ## Übung  2.1 (PHP)
 
 >**Aufgabenstellung**
->Wiederhole PHP Grundlagen, z.B. w3schools
+>Wiederhole PHP Grundlagen, z.B. w3schools  
 >Arbeitsbericht: Cheat Sheet der wichtigsten PHP Befehle und Konstrukte.
 
 PHP ist in der Lage Quelltext zur Laufzeit zu generieren.
