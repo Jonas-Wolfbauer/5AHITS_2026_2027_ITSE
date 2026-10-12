@@ -37,7 +37,7 @@ Suche mir die Fehler in diesem PHP Programm und sag mir was ich verbessern sollt
 PHP ist in der Lage Quelltext zur Laufzeit zu generieren.
 
 
-**PHP Blöcke und Kommentare**
+**PHP Blöcke und Kommentare**  
 PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HTML Code platziert werden können.
 ```PHP
 <?php
