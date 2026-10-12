@@ -77,11 +77,12 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 ### Notenverwaltung
 
 **Quellen**
-- [Generating a random password in php](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)
+- 
 
 ### Passwort-Generator
 
-**[Quellen](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)**
+**Quellen**
+- [Generating a random password in php](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)
 
 ```
 <h1>Passwortgenerator</h1>
