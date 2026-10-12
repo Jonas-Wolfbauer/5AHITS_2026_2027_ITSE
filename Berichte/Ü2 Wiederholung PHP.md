@@ -148,6 +148,7 @@ function randomPassword($laenge)
     // schaut ob die Checkbox angehackt ist unf fügt die Option hinzu
     if (isset($_GET["Großbuchstaben"]) && $_GET["Großbuchstaben"] == 1)
     {
+        // += geht nur bei zahlen
         $alphabet .= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
     if (isset($_GET["zahl"]) && $_GET["zahl"] == 1)
