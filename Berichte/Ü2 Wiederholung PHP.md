@@ -73,7 +73,126 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 ### Notenverwaltung
 
 **Quellen**
-- (Pixelpilot PHP Formulare)[https://pixelpilot.github.io/webdev/php_mysql/20_formulare.html]
+- [Pixelpilot PHP Formulare](https://pixelpilot.github.io/webdev/php_mysql/20_formulare.html)
+- [HTML Tables](https://www.w3schools.com/html/html_tables.asp)
+- [CSS](https://www.w3schools.com/cssref/pr_border-collapse.php)
+
+```PHP
+<?php
+    session_start();
+
+    if (!isset($_COOKIE["PHPSESSID"]))
+    {
+        echo "<div>No grades have been entered yet.</div>";
+        $_SESSION["subjects"] = [];
+        $_SESSION["grades"] = [];
+        $_SESSION["containsGrades"] = false;
+    }
+    else
+    {
+        // trim removes spaces
+        if (isset($_POST["subject"]) && isset($_POST["grade"]) && trim($_POST["subject"]) != "")
+        {
+            array_push($_SESSION["subjects"], $_POST["subject"]);
+            array_push($_SESSION["grades"], $_POST["grade"]);
+
+            $_SESSION["containsGrades"] = true;
+        }
+
+        if ($_SESSION["containsGrades"] == true)
+        {
+            $size = count($_SESSION["grades"]);
+            $positiveGrades = 0;
+
+            echo "<h1>Grades</h1>";
+            echo "<table>";
+            echo "<tr>";
+            echo "<th>Subject</th>";
+            echo "<th>Grade</th>";
+            echo "</tr>";
+
+            for ($i = 0; $i < $size; $i++)
+            {
+                echo "<tr>";
+                echo "<td>" . $_SESSION["subjects"][$i] . "</td>";
+                echo "<td>". $_SESSION["grades"][$i] ."</td>";
+                echo "</tr>";
+
+                // re-use this foor loop for positive grade evaluation
+                if ($_SESSION["grades"][$i] <= 4)
+                {
+                    $positiveGrades++;
+                }
+               
+            }
+            echo "</table>";
+        }
+        else
+        {
+            echo "<div>No grades have been entered yet.</div>";
+        }
+
+        echo "<h1>Statistics</h1>";
+        echo "<table>";
+            echo "<tr>";
+                echo "<th>Criteria</th>";
+                echo "<th>Grade</th>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td>Count</td>";
+                echo "<td>" . $size . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td>Worst</td>";
+                echo "<td>" . max($_SESSION["grades"]) . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td>Best</td>";
+                echo "<td>" . min($_SESSION["grades"]) . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td>Average</td>";
+                echo "<td>" . round((array_sum($_SESSION["grades"]) / count($_SESSION["grades"])), 2) . "</td>";
+            echo "</tr>";
+            echo "<tr>";
+                echo "<td>Passed</td>";
+                echo "<td>" . $positiveGrades . " (out of " . $size . ")</td>";
+        echo "</table>";
+    }
+?>
+
+<h1>Notenverwaltung</h1>
+<form method="post">
+    <input type="text" name="subject" min="1" max="5">
+    <select name="grade">
+        <option value="1">1 (Sehr gut)</option>
+        <option value="2">2 (Gut)</option>
+        <option value="3">3 (Befriedigend)</option>
+        <option value="4">4 (Genügend)</option>
+        <option value="5">5 (Nicht genügend)</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+<style>
+    html {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    table {
+        text-align: center;
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 12%;
+    }
+
+    th {
+        border-bottom: 1px solid black;
+        background-color: lightgray;
+    }
+</style>
+```
 
 ### Passwort-Generator
 
@@ -81,7 +200,7 @@ PHP Kann nur in PHP Blöcken ausgeführt werden, welche willkürlich zwischen HT
 - [Generating a random password in php](https://stackoverflow.com/questions/6101956/generating-a-random-password-in-php)
 
 #### Version 1
-```
+```PHP
 <h1>Passwortgenerator</h1>
 
 <?php
@@ -128,7 +247,7 @@ if (isset($_GET["laenge"]))
 ?>
 ```
 #### Version 2
-```
+```PHP
 <h1>Passwortgenerator</h1>
 
 <?php
