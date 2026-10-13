@@ -337,3 +337,5 @@ if (isset($_GET["laenge"]))
 >- Benutzer gibt einen Tipp ab
 >- PHP antwortet mit „zu hoch“, „zu niedrig“ oder „richtig“
 > -Anzahl der Versuche mitzählen
+
+Keine Zeit mehr für Erarbeitung der Aufgabe.
